@@ -37,7 +37,7 @@ class studentComparator implements Comparator<Student>
 		else if(o1.marks<o2.marks)
 			return 1;
 		else
-			return o2.name.compareToIgnoreCase(o1.name);
+			return o1.name.compareToIgnoreCase(o2.name);
 		}
 		else
 		return 0;
@@ -61,12 +61,13 @@ public class hello {
 		System.out.println("Name is"+name);
 		//test(123);
 		
-		Student[] stud = new Student[5];
+		Student[] stud = new Student[6];
 		stud[0]=new Student(10,"Joe");
 		stud[1]=new Student(20,"Meriza");
 		stud[2]=new Student(30,"Jafita");
 		stud[3]=new Student(40,"Marwin");
 		stud[4]=new Student(10,"Alphonse");
+		stud[5]=new Student(10,"Amala");
 		orderStudents(stud,"marks");
 		//stud.
 		//int[] inte= new int[10];
